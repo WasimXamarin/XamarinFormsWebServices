@@ -69,6 +69,7 @@
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="CustomRenderiOS\MyEntryRenderer.cs" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
@@ -133,5 +134,8 @@
       <Project>{EEFF1BDA-D7F5-47B0-BBAF-F12D242F93E0}</Project>
       <Name>XamarinFormsWebServices</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CustomRenderiOS\" />
   </ItemGroup>
 </Project>

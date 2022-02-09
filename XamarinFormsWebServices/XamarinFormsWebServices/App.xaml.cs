@@ -1,6 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using XamarinFormsWebServices.ViewModels;
 using XamarinFormsWebServices.Views;
 
 namespace XamarinFormsWebServices
@@ -10,9 +11,12 @@ namespace XamarinFormsWebServices
         public App()
         {
             InitializeComponent();
+            Settings = new BasicDataBindingViewModel(Current.Properties);
 
-            MainPage = new MainPage();
+            MainPage = new BasicDataBindingPage();
         }
+
+        public BasicDataBindingViewModel Settings { private set; get; }
 
         protected override void OnStart()
         {
@@ -20,6 +24,7 @@ namespace XamarinFormsWebServices
 
         protected override void OnSleep()
         {
+            Settings.SaveState(Current.Properties);
         }
 
         protected override void OnResume()
