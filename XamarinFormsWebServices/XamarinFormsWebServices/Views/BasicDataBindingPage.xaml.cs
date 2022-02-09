@@ -6,12 +6,12 @@ using XamarinFormsWebServices.ViewModels;
 
 namespace XamarinFormsWebServices.Views
 {
-    public partial class LogInPage : ContentPage
+    public partial class BasicDataBindingPage : ContentPage
     {
-        public LogInPage()
+        public BasicDataBindingPage()
         {
             InitializeComponent();
-            BindingContext = new LogInViewModel();
+            BindingContext = new BasicDataBindingViewModel();
         }
     }
 }

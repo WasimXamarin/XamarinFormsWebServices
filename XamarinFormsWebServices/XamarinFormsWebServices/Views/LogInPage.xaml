@@ -2,10 +2,42 @@
 <ContentPage
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    x:Class="XamarinFormsWebServices.Views.LogInPage">
+    xmlns:local="clr-namespace:XamarinFormsWebServices.Behaviors"
+    xmlns:Custom="clr-namespace:XamarinFormsWebServices.CustomRender"
+    xmlns:iOS="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    iOS:Page.UseSafeArea="True"
+    x:Class="XamarinFormsWebServices.Views.LogInPage"
+    Title="{x:Binding Title}">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="NumericValidationStyle" TargetType="Entry">
+                <Style.Setters>
+                    <Setter Property="local:NumericValidationBehavior.AttachBehavior" Value="true"/>
+                </Style.Setters>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
 
     <ContentPage.Content>
-        
+        <StackLayout>
+            <StackLayout>
+                <Custom:MyEntry Placeholder="Entry Field Color Change"/>
+            </StackLayout>
+            <StackLayout>
+                <Label Text="{x:Binding Title}"/>
+            </StackLayout>
+            <StackLayout>
+                <Entry Placeholder="Enter a System,Double" Style="{x:StaticResource NumericValidationStyle}" />
+            </StackLayout>
+            <StackLayout>
+                <Entry Placeholder="Enter Xamarin Forms">
+                    <Entry.Behaviors>
+                        <local:NumericValidationBehaviorXamarin/>
+                    </Entry.Behaviors>
+                </Entry>
+            </StackLayout>
+        </StackLayout>
     </ContentPage.Content>
 
 </ContentPage>
