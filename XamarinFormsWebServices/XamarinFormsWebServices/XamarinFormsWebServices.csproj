@@ -18,10 +18,16 @@
     <None Remove="Views\" />
     <None Remove="ViewModels\" />
     <None Remove="Models\" />
+    <None Remove="Behaviors\" />
+    <None Remove="CustomRender\" />
+    <None Remove="NamedColor\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\" />
     <Folder Include="ViewModels\" />
     <Folder Include="Models\" />
+    <Folder Include="Behaviors\" />
+    <Folder Include="CustomRender\" />
+    <Folder Include="CommonClass\" />
   </ItemGroup>
 </Project>
