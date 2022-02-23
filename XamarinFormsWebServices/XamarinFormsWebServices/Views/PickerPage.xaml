@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="XamarinFormsWebServices.Views.PickerPage"
+    Title="{x:Binding Title}"
+    xmlns:iOS="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    iOS:Page.UseSafeArea="True">
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Picker x:Name="MyPicker" Title="Select Location">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>India</x:String>
+                        <x:String>Pakistan</x:String>
+                        <x:String>USA</x:String>
+                        <x:String>UK</x:String>
+                        <x:String>Item 1</x:String>
+                        <x:String>Item 2</x:String>
+                        <x:String>Item 3</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+                <Picker.SelectedIndex>
+                    0
+                </Picker.SelectedIndex>
+            </Picker>
+        </StackLayout>    
+    </ContentPage.Content>
+
+</ContentPage>

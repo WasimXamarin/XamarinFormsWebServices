@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="XamarinFormsWebServices.Views.ScannerPage"
+    xmlns:iOS="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    iOS:Page.UseSafeArea="True"
+    Title="{x:Binding Title}">
+
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout>
+                <Label Text="{x:Binding Title}"/>
+            </StackLayout>
+            <StackLayout>
+                <Button Text="Scan your Code" Command="{x:Binding QRCodeCommand}"/>
+            </StackLayout>
+            <StackLayout>
+                <Label Text="{x:Binding BarCodeValue}"/>
+            </StackLayout>
+        </StackLayout>    
+    </ContentPage.Content>
+
+</ContentPage>

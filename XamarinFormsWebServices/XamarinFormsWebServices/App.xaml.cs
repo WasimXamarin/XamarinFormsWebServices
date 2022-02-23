@@ -13,7 +13,7 @@ namespace XamarinFormsWebServices
             InitializeComponent();
             Settings = new BasicDataBindingViewModel(Current.Properties);
 
-            MainPage = new BasicDataBindingPage();
+            MainPage = new NavigationPage(new ScannerPage());
         }
 
         public BasicDataBindingViewModel Settings { private set; get; }
@@ -29,6 +29,7 @@ namespace XamarinFormsWebServices
 
         protected override void OnResume()
         {
+
         }
     }
 }
