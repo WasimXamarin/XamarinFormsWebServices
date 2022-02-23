@@ -39,9 +39,7 @@ namespace XamarinFormsWebServices.CommonClass
             // Loop through the public static fields of the Color structure.
             foreach (FieldInfo fieldInfo in typeof(Color).GetRuntimeFields())
             {
-                if (fieldInfo.IsPublic &&
-                    fieldInfo.IsStatic &&
-                    fieldInfo.FieldType == typeof(Color))
+                if (fieldInfo.IsPublic && fieldInfo.IsStatic && fieldInfo.FieldType == typeof(Color))
                 {
                     // Convert the name to a friendly name.
                     string name = fieldInfo.Name;
@@ -95,9 +93,7 @@ namespace XamarinFormsWebServices.CommonClass
 
             foreach (NamedColor namedColor in NamedColor.All)
             {
-                double distance = Math.Sqrt(Math.Pow(color.R - namedColor.Color.R, 2) +
-                                            Math.Pow(color.G - namedColor.Color.G, 2) +
-                                            Math.Pow(color.B - namedColor.Color.B, 2));
+                double distance = Math.Sqrt(Math.Pow(color.R - namedColor.Color.R, 2) + Math.Pow(color.G - namedColor.Color.G, 2) + Math.Pow(color.B - namedColor.Color.B, 2));
 
                 if (distance < shortestDistance)
                 {

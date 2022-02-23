@@ -21,7 +21,7 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>MinimumOSVersion</key>
-	<string>14.3</string>
+	<string>14.0</string>
 	<key>CFBundleDisplayName</key>
 	<string>XamarinFormsWebServices</string>
 	<key>CFBundleIdentifier</key>
@@ -34,5 +34,11 @@
 	<string>XamarinFormsWebServices</string>
 	<key>XSAppIconAssets</key>
 	<string>Assets.xcassets/AppIcon.appiconset</string>
+	<key>NSCameraUsageDescription</key>
+	<string>This App need to access the camera to take photo.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>This app neend to access the photo</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>This app needs access to microphone.</string>
 </dict>
 </plist>
