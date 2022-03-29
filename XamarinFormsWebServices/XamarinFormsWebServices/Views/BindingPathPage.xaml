@@ -21,11 +21,9 @@
         <StackLayout Margin="20,50,20,0">
             <StackLayout>
                 <Label Text="{x:Binding Title}"/>
-                
             </StackLayout>
             <StackLayout>
                 <TimePicker x:Name="timePicker" />
-
         <Label Text="{Binding Source={x:Reference timePicker},
                               Path=Time.TotalSeconds,
                               StringFormat='{0} total seconds'}" />
