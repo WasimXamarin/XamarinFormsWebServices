@@ -8,7 +8,51 @@
     Title="{x:Binding Title}">
 
     <ContentPage.Content>
-        
+        <StackLayout >
+            <StackLayout>
+                <Label Text="{x:Binding Title}"/>
+            </StackLayout>
+            <StackLayout>
+                <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Latitude: "/>
+                        <Span Text="{x:Binding LatitudeValue}"/>
+                    </FormattedString>
+                </Label.FormattedText>
+               </Label>
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Longitude: "/>
+                            <Span Text="{x:Binding LongitudeValue}"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Entry Placeholder="Address Enter...." Text="{x:Binding AddressValue}"/>
+                <Button Text="Get Latitude Logitude" Command="{x:Binding AddressCommand}"/>
+
+                <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Latitude: "/>
+                        <Span Text="{x:Binding LatitudeValue1}"/>
+                    </FormattedString>
+                </Label.FormattedText>
+               </Label>
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Longitude: "/>
+                            <Span Text="{x:Binding LongitudeValue1}"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <Button Text="Geo Location" Command="{x:Binding GeolocationCommand}"/>
+                
+            </StackLayout>
+        </StackLayout>
     </ContentPage.Content>
 
 </ContentPage>

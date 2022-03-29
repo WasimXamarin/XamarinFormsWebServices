@@ -16,6 +16,8 @@
     <PackageReference Include="Xam.Plugin.Media" Version="5.0.1" />
     <PackageReference Include="ZXing.Net.Mobile" Version="2.4.1" />
     <PackageReference Include="ZXing.Net.Mobile.Forms" Version="2.4.1" />
+    <PackageReference Include="Plugin.Geofence" Version="1.8.11" />
+    <PackageReference Include="Acr.UserDialogs" Version="7.2.0.562" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Views\" />
@@ -27,6 +29,10 @@
     <None Remove="Xam.Plugin.Media" />
     <None Remove="ZXing.Net.Mobile" />
     <None Remove="ZXing.Net.Mobile.Forms" />
+    <None Remove="Plugin.Geofence" />
+    <None Remove="Mono.Android" />
+    <None Remove="Java.Interop, Version=0.1.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065" />
+    <None Remove="Acr.UserDialogs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\" />
@@ -35,5 +41,11 @@
     <Folder Include="Behaviors\" />
     <Folder Include="CustomRender\" />
     <Folder Include="CommonClass\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Android">
+      <HintPath>..\..\..\..\..\..\..\Library\Frameworks\Xamarin.Android.framework\Versions\12.0.0.3\lib\xamarin.android\xbuild-frameworks\MonoAndroid\v11.0\Mono.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="Java.Interop, Version=0.1.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065" />
   </ItemGroup>
 </Project>

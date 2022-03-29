@@ -9,7 +9,8 @@
 
     <ContentPage.Content>
         <StackLayout>
-            <Picker x:Name="MyPicker" Title="Select Location">
+            <StackLayout>
+                <Picker x:Name="MyPicker" Title="Select Location">
                 <Picker.ItemsSource>
                     <x:Array Type="{x:Type x:String}">
                         <x:String>India</x:String>
@@ -25,6 +26,11 @@
                     0
                 </Picker.SelectedIndex>
             </Picker>
+            </StackLayout>
+            <StackLayout>
+                <Image Source="{x:Binding ProfileImage}"/>
+                <Button Text="Take Photo" Command="{x:Binding PhotoCommand}"/>
+            </StackLayout>
         </StackLayout>    
     </ContentPage.Content>
 

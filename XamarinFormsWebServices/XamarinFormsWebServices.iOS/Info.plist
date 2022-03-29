@@ -21,7 +21,7 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>MinimumOSVersion</key>
-	<string>14.0</string>
+	<string>15.2</string>
 	<key>CFBundleDisplayName</key>
 	<string>XamarinFormsWebServices</string>
 	<key>CFBundleIdentifier</key>
@@ -40,5 +40,9 @@
 	<string>This app neend to access the photo</string>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>This app needs access to microphone.</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Your message goes here</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>app use the user location to track his/her attendance based on location.</string>
 </dict>
 </plist>
