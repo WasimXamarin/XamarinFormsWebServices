@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 
 using Xamarin.Forms;
+using XamarinFormsWebServices.ViewModels;
 
 namespace XamarinFormsWebServices.Views
 {
@@ -10,6 +11,7 @@ namespace XamarinFormsWebServices.Views
         public LocationPage()
         {
             InitializeComponent();
+            BindingContext = new LocationViewModel();
         }
     }
 }
